@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+   --lg-font: 'Kaisei Tokumin', serif;
+   --sm-font: 'Poppins', sans-serif; 
+   --pink: #e5345b;
+   --green: #0E8388; /* 0E8388 183D3D */
+}
+
+body{
+    font-family: var(--sm-font);
+}
+
+/* Button */
+.bg-primary{
+    background-color: var(--green)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--green);
+    color: #fff;
+    border-color: var(--green);
+}
+
+/* Text Color */
+.text-primary{
+    color: var(--green)!important;
+}
+
+/* Navbar */
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 30px; 
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--green)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+#header{
+    background: url(../images/PATE\ DENTIFRICE.jpg) top/cover no-repeat;
+}
+.text-outline {
+    text-shadow: 5px 5px 5px black; /* Ajuste les valeurs pour obtenir le contour souhaité */
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+} 
+.carousel-item .btn:hover{
+    border-color: var(--green)!important;
+}
+
+/* Header */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--green);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Collection */
+.active-filter-btn{
+    background-color: var(--green)!important;
+    color: #fff!important;
+    border-color: var(--green)!important;
+}
+.product-container {
+    text-align: center;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.product-image {
+    max-width: 60%; /* Ajuste cette valeur selon tes besoins */
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Special */
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform: scale(1.2);
+}
+
+/* Offers */
+#offers{
+    background: url(../images/VITAMINE\ C.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* Newsletter */
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--green);
+    color: #fff;
+    border-color: var(--green);   
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+/* Footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--green)!important;
+}
+
+
+/* Media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
