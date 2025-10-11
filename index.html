@@ -202,6 +202,24 @@
     </section>
     <!-- end of blogs -->
 
+    <section id="offers" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="ratio ratio-16x9" style="max-width: 800px;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/y7MHYQEpsO4?si=jIgaIaQ-_sJawtXt" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- about us -->
     <section id="about" class="py-5">
         <div class="container">
@@ -220,6 +238,78 @@
         </div>
     </section>
     <!-- end of about us -->
+
+   
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+
+
+  .typewriter {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .typewriter h1 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    display: inline-block;
+    width: 0;
+    animation: typing 5s steps(60, end) forwards, blink .7s infinite;
+  }
+
+  /* Animation écriture */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* Curseur clignotant */
+  @keyframes blink {
+    0% { border-color: transparent }
+    50% { border-color: white }
+    100% { border-color: transparent }
+  }
+
+  /* Bouton qui apparaît après */
+  .cta {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #00d4ff;
+    border-radius: 50px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 5.2s; /* s’affiche après l’écriture */
+    transition: all 0.3s ease;
+  }
+
+  .cta:hover {
+    background: #00aacc;
+    transform: translateY(-3px) scale(1.05);
+  }
+
+  @keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0) }
+  }  
+</style>
+
+
+  <div class="typewriter">
+    <h1>Qu'attendez-vous pour nous <br> contacter au +223 76 16 61 29</h1>
+    <br>
+    <a href="tel:+22376166129" class="cta">📞 Appelez maintenant</a>
+  </div>
+
+
+
 
     <!-- footer -->
     <footer class="bg-dark py-5">

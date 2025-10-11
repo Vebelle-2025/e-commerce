@@ -53,9 +53,23 @@ body{
 }
 
 /* Header */
-#header{
-    background: url(../images/PATE\ DENTIFRICE.jpg) top/cover no-repeat;
+#header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* exemple */
+    overflow: hidden;
 }
+
+#header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/PATE DENTIFRICE.jpg") top/cover no-repeat;
+    filter: blur(5px);
+    transform: scale(1.1); /* évite les bords vides après le flou */
+    z-index: -1;
+}
+
 .text-outline {
     text-shadow: 5px 5px 5px black; /* Ajuste les valeurs pour obtenir le contour souhaité */
 }
@@ -81,6 +95,8 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
+
+
 
 /* Collection */
 .active-filter-btn{
